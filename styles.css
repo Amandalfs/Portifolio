@@ -31,7 +31,7 @@ body {
 }
 
 .menu_opcoes div{
-    margin-left: 10px;
+    padding-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -52,6 +52,7 @@ body {
 }
 
 .menu_opcoes div h2 {
+    margin-left: 15px;
     color: #EBEBEB;
     margin-bottom: 20px;
     text-shadow:-1px -1px 0px #221F3B, 
@@ -160,10 +161,8 @@ body {
 .require_projetos {
     margin-top: 20px;
     text-align: center;
-
     display: flex;
     flex-direction: column;
-    
 }
 
 .require_projetos h1 {
@@ -172,19 +171,14 @@ body {
 }
 
 .projetos {
+    position: relative;
     display: flex;
     flex-direction: row;
-
     justify-content: center;
-    margin-bottom: 30px;
-    overflow: hidden;
 }
-
-
 
 .projetos div p{
     font-size: 10x;
-    
 }
 .projetos div img {
     height: auto;
@@ -199,4 +193,48 @@ body {
 
 .projetos div:first-child, .projetos div:last-child{
     width: 20vw;
+    margin: 8% 0;
+}
+
+.nav button {
+    margin-bottom: 15px;
+    padding:  0 16px;
+    border: 2px solid #EBEBEB;
+    background-color: #6F4A8E;
+    border-radius: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #EBEBEB;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+}
+
+.nav button:active{
+    background-color: #EBEBEB;
+    border-color: #6F4A8E;
+    transition: 0.5 ease-in;
+    color: #6F4A8E;
+    transform: scale(1.2);
+}
+
+.nav button:hover  {
+    transform: scaleX(1.2);
+}
+
+.tec:hover{
+    padding-left: 60px;
+    border: 1px solid #221F3B;
+    transition: .6s;
+    background-color: #221f3baf;
+    cursor: pointer;
+}
+
+.projetos div img:hover {
+   transform: scale(1.2);
+}
+
+.projetos div  img {
+    transition: transform 1s
 }
