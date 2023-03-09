@@ -186,6 +186,7 @@ body {
     border: 2px solid #A3A3A3;
     border-radius: 10px;
     margin-top: 10px;
+    transition: transform .5s ease-in-out;
 }
 .projetos div:nth-child(2){
     width: 30vw;
